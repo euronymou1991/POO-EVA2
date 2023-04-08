@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_11_figuras">
+  <ClassDiagramComponents>
+    <Class name="EVA2_11_FIGURAS" package="eva2_11_figuras" visibility="public" xPosition="411.0" yPosition="23.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="eva2_11_figuras" visibility="public" xPosition="110.0" yPosition="242.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Figuras" package="eva2_11_figuras" visibility="public" xPosition="428.0" yPosition="167.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eva2_11_figuras" visibility="public" xPosition="715.0" yPosition="242.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_11_figuras.Circulo" target="eva2_11_figuras.Figuras"/>
+    <IsRelation name="is" source="eva2_11_figuras.Triangulo" target="eva2_11_figuras.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
