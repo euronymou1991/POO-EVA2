@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_18_uso_interfaces">
+  <ClassDiagramComponents>
+    <Class name="EVA2_18_USO_INTERFACES" package="eva2_18_uso_interfaces" visibility="public" xPosition="389.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eva2_18_uso_interfaces" visibility="public" xPosition="20.0" yPosition="319.0">
+      <Fields>
+        <Field name="base" type="double" visibility="private"/>
+        <Field name="altura" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="double" name="base"/>
+        </Method>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="double" name="altura"/>
+        </Method>
+        <Method name="CalcularArea" returnType="double" visibility="public"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public"/>
+        <Method name="imprimirDtaos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="eva2_18_uso_interfaces" visibility="public" xPosition="20.0" yPosition="53.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="radio"/>
+        </Method>
+        <Method name="CalcularArea" returnType="double" visibility="public"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public"/>
+        <Method name="imprimirDtaos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Figuras" package="eva2_18_uso_interfaces" visibility="public" xPosition="724.0" yPosition="452.0">
+      <Methods>
+        <Method name="CalcularArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="CalcularPeri" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+    <Interface name="MostrarDatos" package="eva2_18_uso_interfaces" visibility="public" xPosition="783.0" yPosition="152.0">
+      <Methods>
+        <Method name="imprimirDtaos" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_uso_interfaces.Circulo" target="eva2_18_uso_interfaces.MostrarDatos"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_uso_interfaces.Triangulo" target="eva2_18_uso_interfaces.MostrarDatos"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_uso_interfaces.Circulo" target="eva2_18_uso_interfaces.Figuras"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_uso_interfaces.Triangulo" target="eva2_18_uso_interfaces.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
