@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_15_protected">
+  <ClassDiagramComponents>
+    <Class name="EVA2_15_Protected" package="eva2_15_protected" visibility="public" xPosition="358.0" yPosition="19.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SubClase" package="eva2_15_protected" visibility="public" xPosition="375.0" yPosition="153.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimirValor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

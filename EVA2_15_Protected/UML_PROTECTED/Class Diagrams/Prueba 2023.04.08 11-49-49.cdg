@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Prueba">
+  <ClassDiagramComponents>
+    <Class name="Superclase" package="Prueba" visibility="public" xPosition="390.0" yPosition="39.0">
+      <Fields>
+        <Field name="valor" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getValor" returnType="int" visibility="public"/>
+        <Method name="setValor" returnType="void" visibility="public">
+          <Argument type="int" name="valor"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
