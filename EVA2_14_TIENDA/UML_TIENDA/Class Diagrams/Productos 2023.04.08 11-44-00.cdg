@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Productos">
+  <ClassDiagramComponents>
+    <Class name="Computadora" package="Productos" visibility="public" isFinal="true" xPosition="99.0" yPosition="10.0">
+      <Fields>
+        <Field name="memoria" type="int" visibility="private"/>
+        <Field name="tamano" type="double" visibility="private"/>
+        <Field name="discoDuro" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="memoria"/>
+          <Argument type="double" name="tamano"/>
+          <Argument type="int" name="discoDuro"/>
+          <Argument type="String" name="fabricante"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="garantia"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="desc"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMemoria" returnType="int" visibility="public"/>
+        <Method name="setMemoria" returnType="void" visibility="public">
+          <Argument type="int" name="memoria"/>
+        </Method>
+        <Method name="getTamano" returnType="double" visibility="public"/>
+        <Method name="setTamano" returnType="void" visibility="public">
+          <Argument type="double" name="tamano"/>
+        </Method>
+        <Method name="getDiscoDuro" returnType="int" visibility="public"/>
+        <Method name="setDiscoDuro" returnType="void" visibility="public">
+          <Argument type="int" name="discoDuro"/>
+        </Method>
+        <Method name="precioVenta" returnType="double" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jeans" package="Productos" visibility="public" isFinal="true" xPosition="144.0" yPosition="344.0">
+      <Fields>
+        <Field name="genero" type="char" visibility="private"/>
+        <Field name="material" type="String" visibility="private"/>
+        <Field name="corte" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="char" name="genero"/>
+          <Argument type="String" name="material"/>
+          <Argument type="String" name="corte"/>
+          <Argument type="String" name="talla"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="desc"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getGenero" returnType="char" visibility="public"/>
+        <Method name="setGenero" returnType="void" visibility="public">
+          <Argument type="char" name="genero"/>
+        </Method>
+        <Method name="getMaterial" returnType="String" visibility="public"/>
+        <Method name="setMaterial" returnType="void" visibility="public">
+          <Argument type="String" name="material"/>
+        </Method>
+        <Method name="getCorte" returnType="String" visibility="public"/>
+        <Method name="setCorte" returnType="void" visibility="public">
+          <Argument type="String" name="corte"/>
+        </Method>
+        <Method name="precioVenta" returnType="double" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
