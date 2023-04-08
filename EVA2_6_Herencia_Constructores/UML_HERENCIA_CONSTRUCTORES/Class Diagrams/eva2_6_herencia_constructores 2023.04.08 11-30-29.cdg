@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_6_herencia_constructores">
+  <ClassDiagramComponents>
+    <Class name="EVA2_6_Herencia_Constructores" package="eva2_6_herencia_constructores" visibility="public" xPosition="328.0" yPosition="17.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="eva2_6_herencia_constructores" visibility="public" xPosition="203.0" yPosition="255.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="respirar" returnType="void" visibility="public"/>
+        <Method name="comer" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mamifero" package="eva2_6_herencia_constructores" visibility="public" xPosition="504.0" yPosition="134.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="tenerPelo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_6_herencia_constructores.Mamifero" target="eva2_6_herencia_constructores.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
