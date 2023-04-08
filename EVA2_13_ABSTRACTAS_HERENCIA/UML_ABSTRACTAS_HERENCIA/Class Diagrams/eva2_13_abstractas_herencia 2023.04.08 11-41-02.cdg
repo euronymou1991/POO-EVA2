@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_13_abstractas_herencia">
+  <ClassDiagramComponents>
+    <Class name="EVA2_13_ABSTRACTAS_HERENCIA" package="eva2_13_abstractas_herencia" visibility="public" xPosition="308.0" yPosition="19.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Figuras" package="eva2_13_abstractas_herencia" visibility="public" isAbstract="true" xPosition="349.0" yPosition="165.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="calcularPeri" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="eva2_13_abstractas_herencia" visibility="public" xPosition="733.0" yPosition="106.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eva2_13_abstractas_herencia" visibility="public" xPosition="692.0" yPosition="335.0">
+      <Fields>
+        <Field name="base" type="double" visibility="private"/>
+        <Field name="altura" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_13_abstractas_herencia.Triangulo" target="eva2_13_abstractas_herencia.Figuras"/>
+    <IsRelation name="is" source="eva2_13_abstractas_herencia.Circulo" target="eva2_13_abstractas_herencia.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
