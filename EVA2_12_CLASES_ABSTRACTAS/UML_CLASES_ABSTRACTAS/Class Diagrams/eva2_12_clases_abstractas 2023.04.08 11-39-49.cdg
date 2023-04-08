@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_12_clases_abstractas">
+  <ClassDiagramComponents>
+    <Class name="EVA2_12_CLASES_ABSTRACTAS" package="eva2_12_clases_abstractas" visibility="public" xPosition="292.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prueba" package="eva2_12_clases_abstractas" visibility="public" xPosition="134.0" yPosition="152.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PruebaAbstracta" package="eva2_12_clases_abstractas" visibility="public" isAbstract="true" xPosition="521.0" yPosition="152.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
