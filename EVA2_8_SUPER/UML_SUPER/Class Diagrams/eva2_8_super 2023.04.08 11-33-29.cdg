@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_8_super">
+  <ClassDiagramComponents>
+    <Class name="EVA2_8_SUPER" package="eva2_8_super" visibility="public" xPosition="395.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="eva2_8_super" visibility="public" xPosition="37.0" yPosition="230.0">
+      <Fields>
+        <Field name="peso" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPeso" returnType="int" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="int" name="peso"/>
+        </Method>
+        <Method name="respirar" returnType="void" visibility="public"/>
+        <Method name="comer" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mamifero" package="eva2_8_super" visibility="public" xPosition="376.0" yPosition="230.0">
+      <Fields>
+        <Field name="colorPelo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="colorPelo"/>
+          <Argument type="int" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColorPelo" returnType="String" visibility="public"/>
+        <Method name="setColorPelo" returnType="void" visibility="public">
+          <Argument type="String" name="colorPelo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Perros" package="eva2_8_super" visibility="public" xPosition="810.0" yPosition="230.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_8_super.Perros" target="eva2_8_super.Mamifero"/>
+    <IsRelation name="is" source="eva2_8_super.Mamifero" target="eva2_8_super.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
