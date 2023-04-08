@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_5_herencia_2">
+  <ClassDiagramComponents>
+    <Class name="EVA2_5_HERENCIA_2" package="eva2_5_herencia_2" visibility="public" xPosition="213.0" yPosition="5.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SuperClase" package="eva2_5_herencia_2" visibility="public" xPosition="213.0" yPosition="238.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mensaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SubClase" package="eva2_5_herencia_2" visibility="public" xPosition="441.0" yPosition="122.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_5_herencia_2.SubClase" target="eva2_5_herencia_2.SuperClase"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
